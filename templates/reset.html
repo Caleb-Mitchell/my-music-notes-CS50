@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Practice Log
+{% endblock %}
+
+{% block main %}
+<div class="content">
+    <div class="container-fluid" style="margin-bottom: 50px">
+        <div class="row">
+                <div class="card card-stats mx-auto">
+                <div class="card-header card-header-warning card-header-icon">
+                    <div class="card-icon">
+                    </div>
+                    <p class="card-category">Days Praticed This Week</p>
+                    <h1 class="card-title" id="day_total">0/7
+                    <small>days</small>
+                    </h1>
+                    </div>
+                <div class="card-footer">
+                    <div class="stats"><h6>Try to practice a little bit every day!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <form action="/" method="post" id="check_boxes">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td class="table-date-text">Sunday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check1" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-date-text">Monday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check2" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+
+              <td class="table-date-text">Tuesday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check3" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+
+              <td class="table-date-text">Wednesday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check4" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-date-text">Thursday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check5" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-date-text">Friday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check6" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table-date-text">Saturday</td>
+              <td>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" style="margin-top: 30px" type="checkbox" value="1" name="day_check7" onclick=count_days() 
+                      onchange="document.getElementById('check_boxes').submit()">
+                    <span class="form-check-sign">
+                      <span class="check"></span>
+                    </span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </form>
+
+  <a href="/reset" class="btn btn-secondary btn-lg" role="button">Reset</a>
+{% endblock %}
