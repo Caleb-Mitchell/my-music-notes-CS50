@@ -1,8 +1,8 @@
-# MY MUSIC NOTES
+# MY MUSIC NOTES - CS50
 
-> NOTE: No updates will be made to this project, so that it remains true to its state when it was submitted as my final project for Harvard's CS50.
+> NOTE: No updates will be made to this project, so that it remains true to its state when it was submitted as my final project for Harvard's [CS50](https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0).
 
-> For the updated version, please visit [here](https://github.com/Caleb-Mitchell/my-music-notes-sinatra).
+> For the updated version, please visit [my-music-notes](https://github.com/Caleb-Mitchell/my-music-notes) to visit the repository, or the site can be found at [mymusicnotes.net](https://www.mymusicnotes.net).
 
 ---
 
